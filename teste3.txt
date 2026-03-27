@@ -1,0 +1,25 @@
+# teste3.txt — variacoes adicionais para robustez
+# L1: produto de duas somas
+((1.0 2.0 +) (3.0 4.0 +) *)
+# L2: aninhamento com / e +
+(((5.0 5.0 *) (2.0 1.0 +) /) (10.0 2.0 /) +)
+# L3: // e % com termo neutro
+(((7.0 3.0 //) (7.0 3.0 %) +) (1.0 0.0 +) +)
+# L4: potencia dividida por produto
+((2.0 4.0 ^) ((1.0 2.0 +) (3.0 1.0 +) *) /)
+# L5: store/load ACUM com RES
+((20.0 ACUM) ((ACUM) (1 RES) +) +)
+# L6: diferenca entre / e //
+((6.0 3.0 /) (6.0 3.0 //) -)
+# L7: % e // em produto
+((13.0 5.0 %) (13.0 5.0 //) *)
+# L8: RES com multiplicacao
+((1.0 1.0 +) ((2 RES) 3.0 *) +)
+# L9: // apos produto e divisao real
+((9.0 9.0 *) (81.0 9.0 /) //)
+# L10: soma de duas potencias
+((4.0 2.0 ^) (2.0 2.0 ^) +)
+# L11: // e % com numeros maiores
+((100.0 7.0 //) (100.0 7.0 %) -)
+# L12: real * real + RES
+((3.5 2.0 *) (1 RES) +)
