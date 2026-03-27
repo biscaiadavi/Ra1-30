@@ -1,0 +1,25 @@
+# teste2.txt — foco em combinacoes mistas e historico RES
+# L1: divisao real menos produto
+((12.0 4.0 /) (3.0 3.0 *) -)
+# L2: // e % do mesmo par
+((15.0 4.0 //) (15.0 4.0 %) +)
+# L3: potencia alta combinada com RES
+((2.0 10.0 ^) (1 RES) -)
+# L4: store/load em BUFFER
+((7.0 BUFFER) ((BUFFER) (2.0 1.0 +) +) *)
+# L5: soma e divisao real compostas
+((100.0 50.0 +) (25.0 5.0 /) *)
+# L6: subtracoes aninhadas
+(((1.0 1.0 +) (2.0 2.0 +) -) (3.0 3.0 +) -)
+# L7: // com potencia
+((64.0 8.0 //) (2.0 3.0 ^) +)
+# L8: % com multiplicacao
+((9.0 5.0 %) (2.0 1.0 +) *)
+# L9: contraste // e % com subtracao
+((11.0 3.0 //) (11.0 3.0 %) -)
+# L10: combinacao / e *
+((50.0 2.0 /) (5.0 5.0 *) +)
+# L11: soma de dois RES
+((1 RES) (2 RES) +)
+# L12: divisao real final
+((8.0 1.0 +) (2.0 3.0 *) /)
